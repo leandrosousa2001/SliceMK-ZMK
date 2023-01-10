@@ -61,14 +61,14 @@
 		layer_3 {
 			bindings = <
 				&bootloader
-				&none    &none &none          &none          &none           &none   &none &none    &none     &none     &none &none &none &bootloader
-				&kp TAB  &none &none          &kp UP_ARROW   &none           &none   &none &kp LSFT &none     &none     &none &none &none &none
-				&none    &none &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &none                  &none     &none     &none &none &none &none
-				&kp LSFT &none &none          &none          &none           &none   &none &none    &none     &none     &none &none &none &kp RSFT
-				&none    &none &none          &none          &none                                            &none     &none &none &none &none
-				                                                             &none   &none &none    &none
-				                                             &kp HOME        &kp END &none &none    &kp PG_UP &kp PG_DN
-				                                                                     &none &none
+				&none  &none  &none          &none          &none           &none   &none  &none  &none     &none     &none &none  &none  &bootloader
+				&trans &none  &none          &kp UP_ARROW   &none           &none   &none  &trans &none     &none     &none &none  &none  &none
+				&trans &none  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &none                 &none     &none     &none &none  &none  &none
+				&trans &none  &none          &none          &none           &none   &none  &none  &none     &none     &none &none  &none  &trans
+				&trans &trans &trans         &none          &none                                           &none     &none &trans &trans &trans
+				                                                            &none   &none  &none  &none
+				                                            &kp HOME        &kp END &none  &none  &kp PG_UP &kp PG_DN
+				                                                                    &trans &trans
 			>;
 		};
 	};
