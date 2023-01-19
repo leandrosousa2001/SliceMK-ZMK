@@ -73,7 +73,7 @@
 		};
 	};
 
-	ZMK_MACRO(m_973313ba, wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp SINGLE_QUOTE>, <&macro_tap &kp SPACE>;)
+	ZMK_MACRO(m_973313ba, wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp DOUBLE_QUOTES>, <&macro_tap &kp SPACE>;)
 	ZMK_MACRO(m_adbdbf5c, wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp SPACE>;)
 
 };
