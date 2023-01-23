@@ -9,9 +9,9 @@
 
 behaviors {
 
-	td_acento_e: tap_dance_acento_e {
+	td_acento_e: tap_dance_acentos_e {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_ACENTOS_E";
+            label = "tap_dance_acentos_e";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&m_acento_e1 1>, <&m_acento_e2 2>;
