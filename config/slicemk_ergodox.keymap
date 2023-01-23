@@ -77,7 +77,7 @@ behaviors {
 				&bootloader
 				&none &none        &none &none        &none &none &none &none &none &none          &none         &none        &none &none
 				&none &none        &none &m_acento_e1 &none &none &none &none &none &m_acento_u1   &m_acento_i1  &m_acento_o1 &none &none
-				&none &m_acento_a  &none &none        &none &none             &none &kp APOSTROPHE &kp TILDE     &kp CARET    &kp GRAVE &none
+				&none &m_acento_a1 &none &none        &none &none             &none &kp APOSTROPHE &kp TILDE     &kp CARET    &kp GRAVE &none
 				&none &none        &none &m_acento_c  &none &none &none &none &none &none          &none         &none        &none &none
 				&none &none        &none &none        &none                         &none          &none         &none        &none &none
 				                                          &none &none &none &none
