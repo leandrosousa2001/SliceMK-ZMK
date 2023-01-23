@@ -28,18 +28,18 @@
 				&kp LSFT &kp Z    &kp X     &kp C     &kp V &kp B          &caps_word &mo 3           &kp N           &kp M        &kp CMMA &kp DOT   &kp FSLH      &kp RSHFT
 				&kp LCTL &kp LGUI &kp LALT  &none     &none                                                           &mt F13 LBKT &none    &kp RALT  &kp RGUI      &kp RCTL
 				                                            &kp C_PREVIOUS &kp C_NEXT &kp C_VOL_DN    &kp C_VOLUME_UP
-				                                       &td0 &mt RCTL DEL   &none      &kp C_MUTE      &kp BSPC        &kp SPC
+				                                       &td0 &mt RCTL DEL   &none      &kp C_MUTE      &kp BSPC        &lt 4 SPACE
 				                                                           &kp RET    &kp RET
 			>;
 		};
 		layer_1 {
 			bindings = <
 				&bootloader
-				&trans &none          &none       &none       &none           &none     &kp F3 &kp F6  &none  &none           &kp LESS_THAN &kp GREATER_THAN     &none        &trans
-				&trans &none          &m_adbdbf5c &m_973313ba &none           &none     &kp F2 &kp F5  &none  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS &none        &trans
-				&trans &kp LEFT_BRACE &kp LPAR    &kp RPAR    &kp RIGHT_BRACE &kp PLUS                 &none  &kp DOLLAR      &kp PERCENT   &kp CARET            &kp COLON    &kp UNDERSCORE
-				&trans &kp PIPE       &kp LBKT    &kp RBKT    &kp BACKSLASH   &kp EQUAL &kp F1 &kp F4  &none  &kp EXCLAMATION &kp AT_SIGN   &kp HASH             &kp QUESTION &trans
-				&trans &trans         &trans      &none       &none                                           &trans          &none         &trans               &trans       &trans
+				&trans &none          &none           &none            &none           &none     &kp F3 &kp F6  &none  &none           &kp LESS_THAN &kp GREATER_THAN     &none        &trans
+				&trans &none          &m_single_quote &m_double_quotes &none           &none     &kp F2 &kp F5  &none  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS &none        &trans
+				&trans &kp LEFT_BRACE &kp LPAR        &kp RPAR         &kp RIGHT_BRACE &kp PLUS                 &none  &kp DOLLAR      &kp PERCENT   &kp CARET            &kp COLON    &kp UNDERSCORE
+				&trans &kp PIPE       &kp LBKT        &kp RBKT         &kp BACKSLASH   &kp EQUAL &kp F1 &kp F4  &none  &kp EXCLAMATION &kp AT_SIGN   &kp HASH             &kp QUESTION &trans
+				&trans &trans         &trans          &none            &none                                           &trans          &none         &trans               &trans       &trans
 				                                                              &none     &kp F9 &kp F12 &none
 				                                              &none           &trans    &kp F8 &kp F11 &trans &trans
 				                                                                        &kp F7 &kp F10
@@ -71,9 +71,28 @@
 				                                                                    &trans &trans
 			>;
 		};
+		layer_4 {
+			bindings = <
+				&bootloader
+				&none &none        &none &none        &none &none &none &none &none &none        &none         &none        &none &none
+				&none &none        &none &m_acento_e1 &none &none &none &none &none &m_acento_u1 &m_acento_i1  &m_acento_o1 &none &none
+				&none &m_acento_a1 &none &none        &none &none             &none &none        &none         &none        &none &none
+				&none &none        &none &m_acento_c  &none &none &none &none &none &none        &none         &none        &none &none
+				&none &none        &none &none        &none                         &none        &none         &none        &none &none
+				                                          &none &none &none &none
+				                                    &none &none &none &none &none &none
+				                                                &none &none
+			>;
+		};
 	};
 
-	ZMK_MACRO(m_973313ba, wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp DOUBLE_QUOTES>, <&macro_tap &kp SPACE>;)
-	ZMK_MACRO(m_adbdbf5c, wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp SPACE>;)
+	ZMK_MACRO(m_double_quotes, wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp DOUBLE_QUOTES>, <&macro_tap &kp SPACE>;)
+	ZMK_MACRO(m_single_quote,  wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp SPACE>;)
+	ZMK_MACRO(m_acento_e1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp E>;)
+	ZMK_MACRO(m_acento_u1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp U>;)
+	ZMK_MACRO(m_acento_i1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp I>;)
+	ZMK_MACRO(m_acento_o1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp O>;)
+	ZMK_MACRO(m_acento_a1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp A>;)
+	ZMK_MACRO(m_acento_c,      wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp C>;)
 
 };
