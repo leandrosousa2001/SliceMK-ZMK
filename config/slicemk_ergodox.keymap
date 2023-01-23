@@ -8,36 +8,12 @@
 / {
 
     behaviors {
-        td_layers: tap_dance_layers {
+        td0: tap_dance_layers {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_LAYERS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&mo 2>, <&mo 3>;
-        };
-		
-		td_acento_a: tap_dance_acento_a {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_ACENTOS_A";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&m_acento_a1 1>, <&m_acento_a2 2>, <&m_acento_a3 3>, <&m_acento_a4 4>;
-        };
-		
-		td_acento_o: tap_dance_acento_o {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_ACENTOS_O";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&m_acento_o1 1>, <&m_acento_o2 2>, <&m_acento_o3 3>;
-        };
-		
-		td_acento_e: tap_dance_acento_e {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_ACENTOS_E";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&m_acento_e1 1>, <&m_acento_e2 2>;
         };
     };
 	
@@ -52,7 +28,7 @@
 				&kp LSFT &kp Z    &kp X     &kp C     &kp V &kp B          &caps_word &mo 3           &kp N           &kp M        &kp CMMA &kp DOT   &kp FSLH      &kp RSHFT
 				&kp LCTL &kp LGUI &kp LALT  &none     &none                                                           &mt F13 LBKT &none    &kp RALT  &kp RGUI      &kp RCTL
 				                                            &kp C_PREVIOUS &kp C_NEXT &kp C_VOL_DN    &kp C_VOLUME_UP
-				                                       &td_layers &mt RCTL DEL   &none      &kp C_MUTE      &kp BSPC        &lt 4 SPACE
+				                                       &td0 &mt RCTL DEL   &none      &kp C_MUTE      &kp BSPC        &lt 4 SPACE
 				                                                           &kp RET    &kp RET
 			>;
 		};
@@ -85,41 +61,38 @@
 		layer_3 {
 			bindings = <
 				&bootloader
-				&none  &none       &none          &none          &none           &none &none &none  &none &none     &none &none  &none  &bootloader
-				&trans &none       &none          &kp UP_ARROW   &none           &none &none &trans &none &none     &none &none  &none  &none
-				&trans &none       &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &none              &none &none     &none &none  &none  &none
-				&trans &none       &none          &none          &none           &none &none &none  &none &none     &none &none  &none  &trans
-				&trans &trans      &trans         &none          &none                                    &none     &none &trans &trans &trans
+				&none  &none  &none          &none          &none           &none   &none  &none  &none     &none     &none &none  &none  &bootloader
+				&trans &none  &none          &kp UP_ARROW   &none           &none   &none  &trans &none     &none     &none &none  &none  &none
+				&trans &none  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &none                 &none     &none     &none &none  &none  &none
+				&trans &none  &none          &none          &none           &none   &none  &none  &none     &none     &none &none  &none  &trans
+				&trans &trans &trans         &none          &none                                           &none     &none &trans &trans &trans
 				                                                            &none   &none  &none  &none
 				                                            &kp HOME        &kp END &none  &none  &kp PG_UP &kp PG_DN
 				                                                                    &trans &trans
 			>;
 		};
-
+		layer_4 {
+			bindings = <
+				&bootloader
+				&none &none        &none &none        &none &none &none &none &none &none        &none         &none        &none &none
+				&none &none        &none &m_acento_e1 &none &none &none &none &none &m_acento_u1 &m_acento_i1  &m_acento_o1 &none &none
+				&none &m_acento_a1 &none &none        &none &none             &none &none        &none         &none        &none &none
+				&none &none        &none &m_acento_c  &none &none &none &none &none &none        &none         &none        &none &none
+				&none &none        &none &none        &none                         &none        &none         &none        &none &none
+				                                          &none &none &none &none
+				                                    &none &none &none &none &none &none
+				                                                &none &none
+			>;
+		};
 	};
 
 	ZMK_MACRO(m_double_quotes, wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp DOUBLE_QUOTES>, <&macro_tap &kp SPACE>;)
-	ZMK_MACRO(m_single_quote,  wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp SPACE>;)
-	
-	ZMK_MACRO(m_acento_a1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp A>;)
-	ZMK_MACRO(m_acento_a2,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp TILDE>,         <&macro_tap &kp A>;)
-	ZMK_MACRO(m_acento_a3,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp CARET>,         <&macro_tap &kp A>;)	
-	ZMK_MACRO(m_acento_a4,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp GRAVE>,         <&macro_tap &kp A>;)
-	
-	ZMK_MACRO(m_acento_o1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp O>;)
-	ZMK_MACRO(m_acento_o2,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp TILDE>,         <&macro_tap &kp O>;)
-	ZMK_MACRO(m_acento_o3,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp CARET>,         <&macro_tap &kp O>;)
-	
-	ZMK_MACRO(m_acento_e1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp E>;)
-	ZMK_MACRO(m_acento_e2,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp CARET>,         <&macro_tap &kp E>;)
-	
-	ZMK_MACRO(m_acento_u1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp U>;)
-	ZMK_MACRO(m_acento_i1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp I>;)
-	
-
-	
-
-	
-	ZMK_MACRO(m_acento_c,      wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp C>;)
+	ZMK_MACRO(m_single_quote,  wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp SPACE>;)
+	ZMK_MACRO(m_acento_e1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp E>;)
+	ZMK_MACRO(m_acento_u1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp U>;)
+	ZMK_MACRO(m_acento_i1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp I>;)
+	ZMK_MACRO(m_acento_o1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp O>;)
+	ZMK_MACRO(m_acento_a1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp A>;)
+	ZMK_MACRO(m_acento_c,      wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp C>;)
 
 };
