@@ -15,8 +15,13 @@ behaviors {
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&mo 2>, <&mo 3>;
         };
-
-
+	td_acento_e: tap_dance_acento_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_ACENTOS_E";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&m_acento_e1 1>, <&m_acento_e2 2>;
+        };
 };
 
 	keymap {
