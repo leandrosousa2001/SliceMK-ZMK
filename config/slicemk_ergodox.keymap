@@ -16,13 +16,7 @@ behaviors {
             bindings = <&mo 1>, <&mo 2>, <&mo 3>;
         };
 
-	td_acento_a: tap_dance_acento_a {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_ACENTOS_A";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&m_acento_a 1>, <&m_acento_aa 2>, <&m_acento_aaa 3>, <&m_acento_aaaa 4>;
-        };
+
 };
 
 	keymap {
@@ -84,7 +78,7 @@ behaviors {
 				&bootloader
 				&none &none        &none &none        &none &none &none &none &none &none        &none         &none        &none &none
 				&none &none        &none &m_acento_e1 &none &none &none &none &none &m_acento_u1 &m_acento_i1  &m_acento_o1 &none &none
-				&none &td_acento_a  &none &none        &none &none             &none &none        &none         &none        &none &none
+				&none &m_acento_a  &none &none        &none &none             &none &none        &none         &none        &none &none
 				&none &none        &none &m_acento_c  &none &none &none &none &none &none        &none         &none        &none &none
 				&none &none        &none &none        &none                         &none        &none         &none        &none &none
 				                                          &none &none &none &none
