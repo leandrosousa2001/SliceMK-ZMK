@@ -95,19 +95,7 @@
 				                                                                    &trans &trans
 			>;
 		};
-		layer_4 {
-			bindings = <
-				&bootloader
-				&none &none        &none &none        &none &none &none &none  &none &none          &none         &none        &none     &none
-				&none &none        &none &td_acento_e &none &none &none &none  &none &m_acento_u1   &m_acento_i1  &td_acento_o &none     &none
-				&none &td_acento_a &none &none        &none &none              &none &kp APOSTROPHE &kp TILDE     &kp CARET    &kp GRAVE &none
-				&none &none        &none &m_acento_c  &none &none &none &none  &none &none          &none         &none        &none     &none
-				&none &none        &none &none        &none                          &none          &none         &none        &none     &none
-				                                          &none &none &none &none
-				                                    &none &none &none &none &none &none
-				                                                &none &none
-			>;
-		};
+
 	};
 
 	ZMK_MACRO(m_double_quotes, wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp DOUBLE_QUOTES>, <&macro_tap &kp SPACE>;)
