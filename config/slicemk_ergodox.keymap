@@ -15,6 +15,9 @@ behaviors {
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&mo 2>, <&mo 3>;
         };
+};
+
+behaviors{
 	td_acento_a: tap_dance_acento_a {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_ACENTOS_A";
@@ -22,8 +25,8 @@ behaviors {
             tapping-term-ms = <200>;
             bindings = <&m_acento_a1 1>, <&m_acento_a2 2>, <&m_acento_a3 3>, <&m_acento_a4 4>;
         };
-    };
-	
+};
+
 	keymap {
 		compatible = "zmk,keymap";
 		layer_0 {
