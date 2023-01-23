@@ -7,13 +7,37 @@
 
 / {
 
-    behaviors {
-        td0: tap_dance_layers {
+behaviors {
+        td_layers: tap_dance_layers {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_LAYERS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&mo 2>, <&mo 3>;
+        };
+		
+	td_acento_a: tap_dance_acento_a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_ACENTOS_A";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&m_acento_a1 1>, <&m_acento_a2 2>, <&m_acento_a3 3>, <&m_acento_a4 4>;
+        };
+		
+	td_acento_o: tap_dance_acento_o {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_ACENTOS_O";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&m_acento_o1 1>, <&m_acento_o2 2>, <&m_acento_o3 3>;
+        };
+		
+	td_acento_e: tap_dance_acento_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_ACENTOS_E";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&m_acento_e1 1>, <&m_acento_e2 2>;
         };
     };
 	
