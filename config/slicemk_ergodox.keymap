@@ -15,15 +15,13 @@ behaviors {
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&mo 2>, <&mo 3>;
         };
-};
 
-behaviors{
 	td_acento_a: tap_dance_acento_a {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_ACENTOS_A";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&m_acento_a1 1>, <&m_acento_a2 2>, <&m_acento_a3 3>, <&m_acento_a4 4>;
+            bindings = <&m_acento_a 1>, <&m_acento_aa 2>, <&m_acento_aaa 3>, <&m_acento_aaaa 4>;
         };
 };
 
@@ -86,7 +84,7 @@ behaviors{
 				&bootloader
 				&none &none        &none &none        &none &none &none &none &none &none        &none         &none        &none &none
 				&none &none        &none &m_acento_e1 &none &none &none &none &none &m_acento_u1 &m_acento_i1  &m_acento_o1 &none &none
-				&none &m_acento_a1 &none &none        &none &none             &none &none        &none         &none        &none &none
+				&none &m_acento_a  &none &none        &none &none             &none &none        &none         &none        &none &none
 				&none &none        &none &m_acento_c  &none &none &none &none &none &none        &none         &none        &none &none
 				&none &none        &none &none        &none                         &none        &none         &none        &none &none
 				                                          &none &none &none &none
@@ -99,10 +97,10 @@ behaviors{
 	ZMK_MACRO(m_double_quotes, wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp DOUBLE_QUOTES>, <&macro_tap &kp SPACE>;)
 	ZMK_MACRO(m_single_quote,  wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp SPACE>;)
 	
-	ZMK_MACRO(m_acento_a1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp A>;)
-	ZMK_MACRO(m_acento_a2,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp TILDE>,         <&macro_tap &kp A>;)
-	ZMK_MACRO(m_acento_a3,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp CARET>,         <&macro_tap &kp A>;)	
-	ZMK_MACRO(m_acento_a4,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp GRAVE>,         <&macro_tap &kp A>;)
+	ZMK_MACRO(m_acento_a,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp A>;)
+	ZMK_MACRO(m_acento_aa,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp TILDE>,         <&macro_tap &kp A>;)
+	ZMK_MACRO(m_acento_aaa,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp CARET>,         <&macro_tap &kp A>;)	
+	ZMK_MACRO(m_acento_aaaa,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp GRAVE>,         <&macro_tap &kp A>;)
 	
 	ZMK_MACRO(m_acento_o1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp O>;)
 	ZMK_MACRO(m_acento_o2,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp TILDE>,         <&macro_tap &kp O>;)
