@@ -13,7 +13,7 @@ behaviors {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_LAYERS";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&mo 1>, <&mo 2>, <&mo 3>;
         };
 	
