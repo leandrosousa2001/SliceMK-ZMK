@@ -39,10 +39,15 @@ behaviors {
 	
 	combos {
         	compatible = "zmk,combos";
-        	combo_esc {
-           		timeout-ms = <50>;
+        	ca1 {
+           		timeout-ms = <40>;
            		key-positions = <30 36>;
            		bindings = <&m_acento_a1>;
+        	};
+		ca2 {
+           		timeout-ms = <40>;
+           		key-positions = <30 37>;
+           		bindings = <&m_acento_a2>;
         	};
         };
     
