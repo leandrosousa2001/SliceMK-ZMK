@@ -74,6 +74,26 @@ behaviors {
            		key-positions = <44 36>;
            		bindings = <&m_acento_c>;
         	};
+		ci {
+           		timeout-ms = <40>;
+           		key-positions = <25 33>;
+           		bindings = <&m_acento_ci1>;
+        	};
+		cu {
+           		timeout-ms = <40>;
+           		key-positions = <24 33>;
+           		bindings = <&m_acento_u1>;
+        	};
+		co1 {
+           		timeout-ms = <40>;
+           		key-positions = <26 33>;
+           		bindings = <&m_acento_o1>;
+        	};
+		co2 {
+           		timeout-ms = <40>;
+           		key-positions = <26 32>;
+           		bindings = <&m_acento_o2>;
+        	};
         };
     
 	
