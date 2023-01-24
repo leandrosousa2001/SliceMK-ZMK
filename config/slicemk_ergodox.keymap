@@ -69,21 +69,18 @@ behaviors {
            		key-positions = <18 38>;
            		bindings = <&m_acento_e2>;
         	};
-		cc {
-           		timeout-ms = <40>;
-           		key-positions = <44 36>;
-           		bindings = <&m_acento_c>;
-        	};
-		ci {
-           		timeout-ms = <40>;
-           		key-positions = <25 33>;
-           		bindings = <&m_acento_ci1>;
-        	};
+
 		cu {
            		timeout-ms = <40>;
            		key-positions = <24 33>;
            		bindings = <&m_acento_u1>;
         	};
+		ci {
+           		timeout-ms = <40>;
+           		key-positions = <25 33>;
+           		bindings = <&m_acento_i1>;
+        	};
+
 		co1 {
            		timeout-ms = <40>;
            		key-positions = <26 33>;
@@ -93,6 +90,12 @@ behaviors {
            		timeout-ms = <40>;
            		key-positions = <26 32>;
            		bindings = <&m_acento_o2>;
+        	};
+		
+		cc {
+           		timeout-ms = <40>;
+           		key-positions = <44 36>;
+           		bindings = <&m_acento_c>;
         	};
         };
     
