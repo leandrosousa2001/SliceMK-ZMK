@@ -24,7 +24,7 @@ behaviors {
     		flavor = "hold-preferred";
     		tapping-term-ms = <200>;
     		quick-tap-ms = <125>;
-    		bindings = <&lt>, <&kp>;
+    		bindings = <&mo>, <&kp>;
 	};
 };
 
