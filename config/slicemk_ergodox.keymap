@@ -91,6 +91,11 @@ behaviors {
            		key-positions = <26 32>;
            		bindings = <&m_acento_o2>;
         	};
+		co3 {
+           		timeout-ms = <40>;
+           		key-positions = <26 31>;
+           		bindings = <&m_acento_o2>;
+        	};
 		
 		cc {
            		timeout-ms = <40>;
