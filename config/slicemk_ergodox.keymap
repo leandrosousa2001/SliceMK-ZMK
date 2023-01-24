@@ -57,7 +57,7 @@ behaviors {
 		ca4 {
            		timeout-ms = <40>;
            		key-positions = <30 39>;
-           		bindings = <&m_acento_a3>;
+           		bindings = <&m_acento_a4>;
         	};
 		ce1 {
            		timeout-ms = <40>;
@@ -66,7 +66,7 @@ behaviors {
         	};
 		ce2 {
            		timeout-ms = <40>;
-           		key-positions = <30 38>;
+           		key-positions = <18 38>;
            		bindings = <&m_acento_e2>;
         	};
 		cc {
