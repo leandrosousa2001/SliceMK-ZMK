@@ -89,11 +89,11 @@ behaviors {
 		layer_4 {
 			bindings = <
 				&bootloader
-				&none &none        &none &none        &none &none &none &none &none &none          &none         &none        &none &none
-				&none &none        &none &m_acento_e1 &none &none &none &none &none &m_acento_u1   &m_acento_i1  &m_acento_o1 &none &none
-				&none &m_acento_a1 &none &none        &none &none             &none &kp APOSTROPHE &kp TILDE     &kp CARET    &kp GRAVE &none
-				&none &none        &none &m_acento_c  &none &none &none &none &none &none          &none         &none        &none &none
-				&none &none        &none &none        &none                         &none          &none         &none        &none &none
+				&none 	&none        	&none 		&none        	&none 		&none 	&none &none 	&none 	&none	&none         	&none        	&none &none
+				&none 	&none        	&none 		&none		&none 		&none 	&none &none 	&none 	&none	&none		&none		&none &none
+				&none 	&kp GRAVE	&kp CARET	&kp TILDE	&kp APOSTROPHE	&none        		&none   &none 	&none		&none 		&none &none
+				&none 	&none        	&none 		&none		&none 		&none 	&none &none 	&none 	&none   &none         	&none        	&none &none
+				&none 	&none        	&none 		&none        	&none           				&none   &none         	&none        	&none &none
 
 							&none	&none 				&none 		&none
 					&none 		&none	&none 				&none 		&none 		&none
@@ -122,17 +122,17 @@ behaviors {
 	
 	ZMK_MACRO(m_acento_c,      wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp C>;)
 	
- macros {
-        m_dito: m_dito {
-            label = "ZM_dito";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTL>
-                , <&macro_tap &kp APOSTROPHE>
-                , <&macro_release &kp LCTL>
-                ;
-        };
-    };
+	macros {
+		m_dito: m_dito {
+		label = "ZM_dito";
+		compatible = "zmk,behavior-macro";
+		#binding-cells = <0>;
+		bindings
+			= <&macro_press &kp LCTL>
+			, <&macro_tap &kp APOSTROPHE>
+			, <&macro_release &kp LCTL>
+			;
+		};
+	};
 
 };
