@@ -40,65 +40,65 @@ behaviors {
 	combos {
         	compatible = "zmk,combos";
         	ca1 {
-           		timeout-ms = <30>;
+           		timeout-ms = <20>;
            		key-positions = <30 36>;
            		bindings = <&m_acento_a1>;
         	};
 		ca2 {
-           		timeout-ms = <3030>;
+           		timeout-ms = <20>;
            		key-positions = <30 37>;
            		bindings = <&m_acento_a2>;
         	};
 		ca3 {
-           		timeout-ms = <30>;
+           		timeout-ms = <20>;
            		key-positions = <30 38>;
            		bindings = <&m_acento_a3>;
         	};
 		ca4 {
-           		timeout-ms = <30>;
+           		timeout-ms = <20>;
            		key-positions = <30 39>;
            		bindings = <&m_acento_a4>;
         	};
 		ce1 {
-           		timeout-ms = <30>;
+           		timeout-ms = <20>;
            		key-positions = <18 36>;
            		bindings = <&m_acento_e1>;
         	};
 		ce2 {
-           		timeout-ms = <30>;
+           		timeout-ms = <20>;
            		key-positions = <18 38>;
            		bindings = <&m_acento_e2>;
         	};
 
 		cu {
-           		timeout-ms = <30>;
+           		timeout-ms = <20>;
            		key-positions = <24 33>;
            		bindings = <&m_acento_u1>;
         	};
 		ci {
-           		timeout-ms = <30>;
+           		timeout-ms = <20>;
            		key-positions = <25 33>;
            		bindings = <&m_acento_i1>;
         	};
 
 		co1 {
-           		timeout-ms = <30>;
+           		timeout-ms = <20>;
            		key-positions = <26 33>;
            		bindings = <&m_acento_o1>;
         	};
 		co2 {
-           		timeout-ms = <30>;
+           		timeout-ms = <20>;
            		key-positions = <26 32>;
            		bindings = <&m_acento_o2>;
         	};
 		co3 {
-           		timeout-ms = <30>;
+           		timeout-ms = <20>;
            		key-positions = <26 31>;
            		bindings = <&m_acento_o3>;
         	};
 		
 		cc {
-           		timeout-ms = <30>;
+           		timeout-ms = <20>;
            		key-positions = <44 36>;
            		bindings = <&m_acento_c>;
         	};
