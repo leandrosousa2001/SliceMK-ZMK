@@ -92,7 +92,7 @@ behaviors {
 				&none 	&none        	&none 		&none        	&none 		&none 	&none &none 	&none 	&none	&none         	&none        	&none &none
 				&none 	&none        	&none 		&none		&none 		&none 	&none &none 	&none 	&none	&none		&none		&none &none
 				&none 	&kp GRAVE	&kp CARET	&kp TILDE	&kp APOSTROPHE	&none        		&none   &none 	&none		&none 		&none &none
-				&none 	&none        	&none 		&none		&none 		&none 	&none &none 	&none 	&none   &none         	&none        	&none &none
+				&none 	&none        	&none 		&m_acento_c	&none 		&none 	&none &none 	&none 	&none   &none         	&none        	&none &none
 				&none 	&none        	&none 		&none        	&none           				&none   &none         	&none        	&none &none
 
 							&none	&none 				&none 		&none
