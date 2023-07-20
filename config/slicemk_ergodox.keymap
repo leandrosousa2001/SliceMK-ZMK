@@ -16,6 +16,22 @@ behaviors {
             tapping-term-ms = <300>;
             bindings = <&mo 1>, <&mo 2>, <&mo 3>;
         };
+
+	td2: tdAcento1{
+		compatible = "zmk,behavior-tap-dance";
+		label = "tdAcento1";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp APOSTROPHE>, <&kp GRAVE>;
+	}
+
+	td3: tdAcento2{
+		compatible = "zmk,behavior-tap-dance";
+		label = "tdAcento1";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp TILDE>, <&kp CARET>;
+	}
 	
 	gth: global-quick-tap {
     		compatible = "zmk,behavior-hold-tap";
@@ -91,7 +107,7 @@ behaviors {
 				&bootloader
 				&none 	&none        	&none 		&none        	&none 		&none 	&none &none 	&none 	&none		&none         	&none        	&none &none
 				&none 	&none        	&none 		&m_acento_e1	&none 		&none 	&none &none 	&none 	&m_acento_u1	&m_acento_i1	&m_acento_o1	&none &none
-				&none   &m_acento_a1    &kp CARET	&kp TILDE	&kp GRAVE	&none        		&none   &none 		&none		&none 		&none &none
+				&none   &m_acento_a1    &kp CARET	&td3		&td2 		&none        		&none   &none 		&none		&none 		&none &none
 				&none 	&none        	&none 		&m_acento_c	&none 		&none 	&none &none 	&none 	&none   	&none         	&none        	&none &none
 				&none 	&none        	&none 		&none        	&none           				&none   	&none         	&none        	&none &none
 
@@ -136,3 +152,4 @@ behaviors {
 	};
 
 };
+
