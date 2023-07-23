@@ -23,15 +23,47 @@ behaviors {
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
 		bindings = <&kp APOSTROPHE>, <&kp GRAVE>;
-	}
+	};
 
 	td3: tdAcento2{
 		compatible = "zmk,behavior-tap-dance";
-		label = "tdAcento1";
+		label = "tdAcento2";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
 		bindings = <&kp TILDE>, <&kp CARET>;
-	}
+	};
+
+	td4: tdBrace{
+		compatible = "zmk,behavior-tap-dance";
+		label = "tdBrace";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+	};
+
+	td5: tdPar{
+		compatible = "zmk,behavior-tap-dance";
+		label = "tdPar";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LPAR>, <&kp RPAR>;
+	};
+
+	td6: tdBkt{
+		compatible = "zmk,behavior-tap-dance";
+		label = "tdBkt";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LBKT>, <&kp RBKT>;
+	};
+
+	td7: tdThan{
+		compatible = "zmk,behavior-tap-dance";
+		label = "tdThan";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+	};
 	
 	gth: global-quick-tap {
     		compatible = "zmk,behavior-hold-tap";
@@ -49,79 +81,85 @@ behaviors {
 		layer_0 {
 			bindings = <
 				&bootloader
-				&none    &kp N1   &kp N2    &kp N3     &kp N4 		&kp N5 &none      &kp PRINTSCREEN &kp N6  &kp N7       &kp N8   &kp N9    &kp N         &kp INSERT
-				&kp TAB  &kp Q    &kp W     &kp E     &kp R  		&kp T  &none      &none           &kp Y   &kp U        &kp I    &kp O     &kp P         &sl 4
-				&kp ESC  &kp A    &kp S     &kp D     &kp F  		&kp G                             &kp H   &kp J        &kp K    &kp L     &kp SEMICOLON &kp MINUS
-				&kp LSFT &kp Z    &kp X     &kp C     &kp V  		&kp B  &caps_word &mo 3           &kp N   &kp M        &kp CMMA &kp DOT   &kp FSLH      &kp RSHFT
-				&kp LCTL &kp LGUI &kp LALT  &none     &kp LA(TAB)                                                      &mt F13 LBKT &m_dito  &kp RALT  &kp RGUI      &kp RCTL
+				&none    &kp N1   	&kp N2    &kp N3   &kp N4          &kp N5    &none      						     		&kp PRINTSCREEN 	&kp N6 	&kp N7  	&kp N8        	&kp N9   		&kp N0         	&kp INSERT
+				&kp TAB  &kp Q    	&kp W     &kp E    &kp R           &kp T     &none      						     		&none           	&kp Y  	&kp U   	&kp I         	&kp O    		&kp P         	&sl 4
+				&kp ESC  &kp A    	&kp S     &kp D    &kp F           &kp G  	                           				     					&kp H  	&kp J  	       	&kp K         	&kp L         		&kp SEMICOLON	&kp MINUS
+				&kp LSFT &kp Z    	&kp X     &kp C    &kp V       	   &kp B     &caps_word 						     		&mo 3           	&kp N  	&kp M   	&kp CMMA      	&kp DOT  		&kp FSLH      	&kp RSHFT
+				&kp LCTL &kp LGUI 	&kp LALT  &none    &kp LA(TAB)	                                        		              				       			&mt F13 LBKT	&m_dito		&kp RALT		&kp RGUI      	&kp RCTL
 
-							&kp C_PREVIOUS 	&kp C_NEXT 		&kp C_VOL_DN    &kp C_VOLUME_UP
-				        &mo 1		&gth LCTL DEL   &kp SPACE      		&kp C_MUTE      &kp BSPC    	&kp SPACE
-				                                   	&kp RET    		&kp RET
+											###################################################################################################
+													      &kp C_PREVIOUS &kp C_NEXT		&kp C_VOL_DN &kp C_VOLUME_UP
+				        							     &mo 1    &gth LCTL DEL  &kp SPACE          &kp C_MUTE   &kp BSPC        	&kp SPACE
+				                                   						    	     &kp RET    	&kp RET
+											###################################################################################################
 			>;
 		};
-		layer_1 {
+		simbolos {
 			bindings = <
 				&bootloader
-				&trans &none          &none           &none            &none           &none     &kp F3 &kp F6  &none  		&none           &kp LESS_THAN &kp GREATER_THAN     &none        &trans
-				&trans &none          &m_single_quote &m_double_quotes &none           &none     &kp F2 &kp F5  &none		&kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS &none        &trans
-				&trans &kp LEFT_BRACE &kp LPAR        &kp RPAR         &kp RIGHT_BRACE &kp PLUS                 &kp APOSTROPHE  &kp DOLLAR      &kp PERCENT   &kp CARET            &kp COLON    &kp UNDERSCORE
-				&mo 2  &kp PIPE       &kp LBKT        &kp RBKT         &kp BACKSLASH   &kp EQUAL &kp F1 &kp F4  &none		&kp EXCLAMATION &kp AT_SIGN   &kp HASH             &kp QUESTION &trans
-				&trans &trans         &trans          &none            &none                                    &trans          &none         &trans               &trans       &trans
-
-							&none     &kp F9 			&kp F12 	&none
-					&none           &trans    &kp F8 			&kp F11 	&trans 		&trans
-				                                  &kp F7 			&kp F10
+				&trans 	 &none          &none     &none     &none          &none     &kp F3 							     		&kp F6  		&none  	&none           &kp LESS_THAN 	&kp GREATER_THAN     	&none        	&trans
+				&trans 	 &none          &sQuote   &dQuote   &none          &none     &kp F2 							     		&kp F5  		&none  	&kp AMPERSAND   &kp ASTERISK  	&kp LEFT_PARENTHESIS 	&none        	&trans
+				&trans 	 &td4 		&td5  	  &td6 	    &td7	   &none         							     		           		&none  	&kp DOLLAR      &kp PERCENT   	&kp CARET            	&kp COLON    	&kp UNDERSCORE
+				&mo 2  	 &kp PIPE       &kp PLUS  &kp EQUAL &none   	   &none     &kp F1 							     		&kp F4  		&none  	&kp EXCLAMATION &kp AT_SIGN   	&kp HASH             	&kp QUESTION	&trans
+				&trans	 &trans         &trans    &none     &none                            								        	       			&trans 	       	&none         	&trans               	&trans       	&trans
+											###################################################################################################
+													      &none  	     &kp F9 		&kp F12      &none
+												     &none    &trans 	     &kp F8 		&kp F11      &trans 	     	&trans
+				                                  						 	     &kp F7 		&kp F10
+											###################################################################################################
 			>;
 		};
-		layer_2 {
+		numeros {
 			bindings = <
 				&bootloader
-				&trans &none          &none    &none    &none           &none     &none  &none  &none  &none        &none        &none        &none     &trans
-				&trans &trans         &trans   &trans   &trans          &none     &none  &none  &none  &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &none     &trans
-				&trans &kp LEFT_BRACE &kp LPAR &kp RPAR &kp RIGHT_BRACE &kp PLUS                &none  &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp DOT   &trans
-				&trans &kp PIPE       &kp LBKT &kp RBKT &kp BACKSLASH   &kp EQUAL &none  &none  &none  &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp COMMA &trans
-				&trans &trans         &trans   &none    &none                                          &kp NUMBER_0 &none        &trans       &trans    &trans
-
-							&trans    &trans 			&trans 		&trans
-					&none		&trans    &trans 			&trans 		&trans 		&trans
-				                                  &trans 			&trans
+				&trans   &none          &none     &none     &none          &none     &none  							     		&none  			&none  	&none           &none         	&none        	  	&none     	&trans
+				&trans   &trans         &trans    &trans    &trans         &none     &none  							     		&none  			&none  	&kp NUMBER_7    &kp NUMBER_8  	&kp NUMBER_9 	  	&none     	&trans
+				&trans   &td4 		&td5  	  &td6 	    &td7 	   &none         							     		       			&none  	&kp NUMBER_4    &kp NUMBER_5  	&kp NUMBER_6 	  	&kp DOT   	&trans
+				&trans   &kp PIPE       &kp PLUS  &kp EQUAL &none   	   &none     &none  							     		&none  			&none  	&kp NUMBER_1    &kp NUMBER_2  	&kp NUMBER_3 	  	&kp COMMA 	&trans
+				&trans   &trans         &trans    &none     &none                            								    		        		&kp NUMBER_0	&none         	&trans       	  	&trans    	&trans
+											###################################################################################################
+													      &trans  	     &trans 		&trans 	     &trans
+												     &none    &trans   	     &trans 		&trans 	     &trans 	     	&trans
+				                                  							     &trans 		&trans
+											###################################################################################################
 			>;
 		};
-		layer_3 {
+		movimetos {
 			bindings = <
 				&bootloader
-				&none  &none  &none          &none          &none           &none   &none  &none  &none     &none     &none &none  &none  &bootloader
-				&trans &none  &none          &kp UP_ARROW   &none           &none   &none  &trans &none     &none     &none &none  &none  &none
-				&trans &none  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &none                 &none     &none     &none &none  &none  &none
-				&trans &none  &none          &none          &none           &none   &none  &none  &none     &none     &none &none  &none  &trans
-				&trans &trans &trans         &none          &none                                           &none     &none &trans &trans &trans
-
-							&none	&none  				&none  		&none
-					&kp HOME        &kp END &none  				&none  		&kp PG_UP 	&kp PG_DN
-				                        	&trans 				&trans
+				&none    &none  	&none     &none    &none           &none     &none  							     		&none  			&none  	&none           &none 	     	&none   		&none  		&bootloader
+				&trans   &none  	&none     &kp UP   &none           &none     &none  							     		&trans 			&none  	&none           &none 	     	&none   		&none  		&none
+				&trans   &none  	&kp LEFT  &kp DOWN &kp RIGHT	   &none            							     		       			&none  	&none           &none 	     	&none   		&none  		&none
+				&trans   &none  	&none     &none    &none           &none     &none  							     		&none  			&none  	&none           &none 	     	&none   		&none  		&trans
+				&trans   &trans 	&trans    &none    &none                                           								       			&none  		&none 	     	&trans 	          	&trans 		&trans
+											###################################################################################################
+													      &none	     &none  		&none	     &none
+												     &kp HOME &kp END 	     &none  		&none  	     &kp PG_UP 	     	&kp PG_DN
+				                        								     &trans 		&trans
+											###################################################################################################
 			>;
 		};
-		layer_4 {
+		acentos {
 			bindings = <
 				&bootloader
-				&none 	&none        	&none 		&none        	&none 		&none 	&none &none 	&none 	&none		&none         	&none        	&none &none
-				&none 	&none        	&none 		&m_acento_e1	&none 		&none 	&none &none 	&none 	&m_acento_u1	&m_acento_i1	&m_acento_o1	&none &none
-				&none   &m_acento_a1    &kp CARET	&td3		&td2 		&none        		&none   &none 		&none		&none 		&none &none
-				&none 	&none        	&none 		&m_acento_c	&none 		&none 	&none &none 	&none 	&none   	&none         	&none        	&none &none
-				&none 	&none        	&none 		&none        	&none           				&none   	&none         	&none        	&none &none
-
-							&none	&none 				&none 		&none
-					&none 		&none	&none 				&none 		&none 		&none
-				                                &none 				&none
+				&none    &none  	&none 	  &none    &none           &none     &none 									&none 			&none 	&none		&none         	&none        		&none 		&none
+				&none    &none  	&none 	  &acE1    &none 	   &none     &none 									&none 			&none 	&m_acento_u1	&m_acento_i1	&m_acento_o1		&none 		&none
+				&none    &acA1  	&kp CARET &td3	   &td2 	   &none           									     			&none   &none 		&none		&none 			&none 		&none
+				&none    &none  	&none 	  &acC     &none 	   &none     &none 									&none 			&none 	&none   	&none         	&none        		&none 		&none
+				&none    &none  	&none 	  &none    &none           															&none   	&none         	&none        		&none 		&none
+											###################################################################################################
+													      &none	     &none 		&none 	     &none
+												     &none    &none	     &none 		&none 	     &none 		&none
+											                                     &none 		&none
+											###################################################################################################
 			>;
 		};
 	};
 
-	ZMK_MACRO(m_double_quotes, wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp DOUBLE_QUOTES>, <&macro_tap &kp SPACE>;)
-	ZMK_MACRO(m_single_quote,  wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp SPACE>;)
+	ZMK_MACRO(dQuote,  wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp DOUBLE_QUOTES>, <&macro_tap &kp SPACE>;)
+	ZMK_MACRO(sQuote,  wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp SPACE>;)
 	
-	ZMK_MACRO(m_acento_a1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp A>;)
+	ZMK_MACRO(acA1,     	   wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp A>;)
 	ZMK_MACRO(m_acento_a2,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp TILDE>,         <&macro_tap &kp A>;)
 	ZMK_MACRO(m_acento_a3,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp CARET>,         <&macro_tap &kp A>;)	
 	ZMK_MACRO(m_acento_a4,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp GRAVE>,         <&macro_tap &kp A>;)
@@ -130,13 +168,13 @@ behaviors {
 	ZMK_MACRO(m_acento_o2,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp TILDE>,         <&macro_tap &kp O>;)
 	ZMK_MACRO(m_acento_o3,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp CARET>,         <&macro_tap &kp O>;)
 	
-	ZMK_MACRO(m_acento_e1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp E>;)
+	ZMK_MACRO(acE1,     	   wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp E>;)
 	ZMK_MACRO(m_acento_e2,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp CARET>,         <&macro_tap &kp E>;)
 	
 	ZMK_MACRO(m_acento_u1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp U>;)
 	ZMK_MACRO(m_acento_i1,     wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp I>;)
 	
-	ZMK_MACRO(m_acento_c,      wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp C>;)
+	ZMK_MACRO(acC,      wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>,    <&macro_tap &kp C>;)
 	
 	macros {
 		m_dito: m_dito {
