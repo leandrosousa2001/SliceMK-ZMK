@@ -87,11 +87,9 @@ behaviors {
 				&kp LSFT 	&kp Z    	&kp X     	&kp C   	&kp V      	&kp B     &caps_word 						     		&mo 3           	&kp N  	&kp M   	&kp CMMA      	&kp DOT  		&kp FSLH      	&kp RSHFT
 				&kp LCTL 	&kp LGUI 	&kp LALT	&none   	&kp LA(TAB)	                                        		              				       		&mt F13 LBKT	&m_dito		&kp RALT		&kp RGUI      	&kp RCTL
 
-													###################################################################################################
 															      &kp C_PREVIOUS &kp C_NEXT		&kp C_VOL_DN &kp C_VOLUME_UP
 				        									     &mo 1    &gth LCTL DEL  &kp SPACE          &kp C_MUTE   &kp BSPC        	&kp SPACE
 				                                   								    	     &kp RET    	&kp RET
-													###################################################################################################
 			>;
 		};
 		simbolos {
@@ -102,11 +100,9 @@ behaviors {
 				&trans 	 	&td4 		&td5  	  	&td6 	  	&td7	   	&none         							     		           		&none  	&kp DOLLAR      &kp PERCENT   	&kp CARET            	&kp COLON    	&kp UNDERSCORE
 				&mo 2  	 	&kp PIPE       	&kp PLUS  	&kp EQUAL 	&none   	&none     &kp F1 							     	&kp F4  		&none  	&kp EXCLAMATION &kp AT_SIGN   	&kp HASH             	&kp QUESTION	&trans
 				&trans	 	&trans         	&trans    	&none     	&none                            								        	       		&trans 	       	&none         	&trans               	&trans       	&trans
-													###################################################################################################
 															      &none  	     &kp F9 		&kp F12      &none
 														     &none    &trans 	     &kp F8 		&kp F11      &trans 	     	&trans
 				                                  								 	     &kp F7 		&kp F10
-													###################################################################################################
 			>;
 		};
 		numeros {
@@ -117,11 +113,9 @@ behaviors {
 				&trans   	&td4 		&td5  	  	&td6 	  	&td7 		&none         							     		       			&none  	&kp NUMBER_4    &kp NUMBER_5  	&kp NUMBER_6 	  	&kp DOT   	&trans
 				&trans   	&kp PIPE	&kp PLUS  	&kp EQUAL 	&none  		&none     &none  							     	&none  			&none  	&kp NUMBER_1    &kp NUMBER_2  	&kp NUMBER_3 	  	&kp COMMA 	&trans
 				&trans   	&trans         	&trans    	&none     	&none                            								    		        	&kp NUMBER_0	&none         	&trans       	  	&trans    	&trans
-													###################################################################################################
 															      &trans  	     &trans 		&trans 	     &trans
 														     &none    &trans   	     &trans 		&trans 	     &trans 	     	&trans
 				                                  									     &trans 		&trans
-													###################################################################################################
 			>;
 		};
 		movimetos {
@@ -132,11 +126,9 @@ behaviors {
 				&trans   	&none  		&kp LEFT  	&kp DOWN	&kp RIGHT	&none            							     		       		&none  	&none           &none 	     	&none   		&none  		&none
 				&trans   	&none  		&none     	&none    	&none           &none     &none  							     	&none  			&none  	&none           &none 	     	&none   		&none  		&trans
 				&trans   	&trans		&trans    	&none    	&none                                           								       		&none  		&none 	     	&trans 	          	&trans 		&trans
-													###################################################################################################
 															      &none	     &none  		&none	     &none
 														     &kp HOME &kp END 	     &none  		&none  	     &kp PG_UP 	     	&kp PG_DN
 				                        										     &trans 		&trans
-													###################################################################################################
 			>;
 		};
 		acentos {
@@ -147,11 +139,9 @@ behaviors {
 				&none    	&acA1  		&kp CARET 	&td3		&td2 	   	&none           									     		&none   &none 		&none		&none 			&none 		&none
 				&none    	&none  		&none 	  	&acC    	&none 	   	&none     &none 								&none 			&none 	&none   	&none         	&none        		&none 		&none
 				&none    	&none  		&none 	  	&none		&none           														&none   	&none         	&none        		&none 		&none
-													###################################################################################################
 															      &none	     &none 		&none 	     &none
 														     &none    &none	     &none 		&none 	     &none 		&none
 													                                     &none 		&none
-													###################################################################################################
 			>;
 		};
 	};
