@@ -23,15 +23,15 @@ behaviors {
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
 		bindings = <&kp APOSTROPHE>, <&kp GRAVE>;
-	};
+	}
 
 	td3: tdAcento2{
 		compatible = "zmk,behavior-tap-dance";
-		label = "tdAcento2";
+		label = "tdAcento1";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
 		bindings = <&kp TILDE>, <&kp CARET>;
-	};
+	}
 	
 	gth: global-quick-tap {
     		compatible = "zmk,behavior-hold-tap";
