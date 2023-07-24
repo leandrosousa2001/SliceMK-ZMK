@@ -21,7 +21,7 @@ behaviors {
 		compatible = "zmk,behavior-tap-dance";
 		label = "tdAcento1";
 		#binding-cells = <0>;
-		tapping-term-ms = <150>;
+		tapping-term-ms = <200>;
 		bindings = <&kp APOSTROPHE>, <&kp GRAVE>;
 	};
 
@@ -29,7 +29,7 @@ behaviors {
 		compatible = "zmk,behavior-tap-dance";
 		label = "tdAcento2";
 		#binding-cells = <0>;
-		tapping-term-ms = <150>;
+		tapping-term-ms = <200>;
 		bindings = <&kp TILDE>, <&kp CARET>;
 	};
 
@@ -37,7 +37,7 @@ behaviors {
 		compatible = "zmk,behavior-tap-dance";
 		label = "tdBrace";
 		#binding-cells = <0>;
-		tapping-term-ms = <150>;
+		tapping-term-ms = <200>;
 		bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
 	};
 
@@ -45,7 +45,7 @@ behaviors {
 		compatible = "zmk,behavior-tap-dance";
 		label = "tdPar";
 		#binding-cells = <0>;
-		tapping-term-ms = <150>;
+		tapping-term-ms = <200>;
 		bindings = <&kp LPAR>, <&kp RPAR>;
 	};
 
@@ -53,7 +53,7 @@ behaviors {
 		compatible = "zmk,behavior-tap-dance";
 		label = "tdBkt";
 		#binding-cells = <0>;
-		tapping-term-ms = <150>;
+		tapping-term-ms = <200>;
 		bindings = <&kp LBKT>, <&kp RBKT>;
 	};
 
@@ -61,7 +61,7 @@ behaviors {
 		compatible = "zmk,behavior-tap-dance";
 		label = "tdThan";
 		#binding-cells = <0>;
-		tapping-term-ms = <150>;
+		tapping-term-ms = <200>;
 		bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
 	};
 
@@ -69,7 +69,7 @@ behaviors {
 		compatible = "zmk,behavior-tap-dance";
 		label = "tdSlash";
 		#binding-cells = <0>;
-		tapping-term-ms = <150>;
+		tapping-term-ms = <200>;
 		bindings = <&kp FSLH>, <&kp BSLH>;
 	};
 	
@@ -78,7 +78,7 @@ behaviors {
     		label = "GLOBAL_QUICK_TAP";
     		#binding-cells = <2>;
     		flavor = "hold-preferred";
-    		tapping-term-ms = <150>;
+    		tapping-term-ms = <200>;
     		quick-tap-ms = <175>;
     		bindings = <&kp>, <&kp>;
 	};
