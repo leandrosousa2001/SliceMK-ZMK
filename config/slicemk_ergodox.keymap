@@ -8,15 +8,6 @@
 / {
 
 behaviors {
-
-        #td_layers: tap_dance_layers {
-        #    compatible = "zmk,behavior-tap-dance";
-        #    label = "TAP_DANCE_LAYERS";
-        #    #binding-cells = <0>;
-        #    tapping-term-ms = <300>;
-        #    bindings = <&mo 1>, <&mo 2>, <&mo 3>;
-        #};
-
  	morph1: morph1{
  		compatible = "zmk,behavior-mod-morph";
  	   	label = "morph1";
@@ -24,14 +15,6 @@ behaviors {
  	   	bindings = <&kp APOSTROPHE>, <&kp GRAVE>;
  	   	mods = <(MOD_LSFT|MOD_RSFT)>;
  	};
-
-	#td2: tdAcento1{
-	#	compatible = "zmk,behavior-tap-dance";
-	#	label = "tdAcento1";
-	#	#binding-cells = <0>;
-	#	tapping-term-ms = <200>;
-	#	bindings = <&kp APOSTROPHE>, <&kp GRAVE>;
-	#};
 
  	morph2: morph2{
  		compatible = "zmk,behavior-mod-morph";
@@ -41,14 +24,6 @@ behaviors {
  	   	mods = <(MOD_LSFT|MOD_RSFT)>;
  	};
 
-	#td3: tdAcento2{
-	#	compatible = "zmk,behavior-tap-dance";
-	#	label = "tdAcento2";
-	#	#binding-cells = <0>;
-	#	tapping-term-ms = <200>;
-	#	bindings = <&kp TILDE>, <&kp CARET>;
-	#};
-
  	morph3: morph3{
  		compatible = "zmk,behavior-mod-morph";
  	   	label = "morph3";
@@ -56,14 +31,6 @@ behaviors {
  	   	bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
  	   	mods = <(MOD_LSFT|MOD_RSFT)>;
  	};
-
-	#td4: tdBrace{
-	#	compatible = "zmk,behavior-tap-dance";
-	#	label = "tdBrace";
-	#	#binding-cells = <0>;
-	#	tapping-term-ms = <200>;
-	#	bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
-	#};
 
  	morph4: morph4{
  		compatible = "zmk,behavior-mod-morph";
@@ -73,14 +40,6 @@ behaviors {
  	   	mods = <(MOD_LSFT|MOD_RSFT)>;
  	};
 
-	#td5: tdPar{
-	#	compatible = "zmk,behavior-tap-dance";
-	#	label = "tdPar";
-	#	#binding-cells = <0>;
-	#	tapping-term-ms = <200>;
-	#	bindings = <&kp LPAR>, <&kp RPAR>;
-	#};
-
  	morph5: morph5{
  		compatible = "zmk,behavior-mod-morph";
  	   	label = "morph5";
@@ -88,14 +47,6 @@ behaviors {
  	   	bindings = <&kp LBKT>, <&kp RBKT>;
  	   	mods = <(MOD_LSFT|MOD_RSFT)>;
  	};
-
-	#td6: tdBkt{
-	#	compatible = "zmk,behavior-tap-dance";
-	#	label = "tdBkt";
-	#	#binding-cells = <0>;
-	#	tapping-term-ms = <200>;
-	#	bindings = <&kp LBKT>, <&kp RBKT>;
-	#};
 
  	morph6: morph6{
  		compatible = "zmk,behavior-mod-morph";
@@ -105,22 +56,6 @@ behaviors {
  	   	mods = <(MOD_LSFT|MOD_RSFT)>;
  	};
 
-	#td7: tdThan{
-	#	compatible = "zmk,behavior-tap-dance";
-	#	label = "tdThan";
-	#	#binding-cells = <0>;
-	#	tapping-term-ms = <200>;
-	#	bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
-	#};
-
-	#td8: tdSlash{
-	#	compatible = "zmk,behavior-tap-dance";
-	#	label = "tdSlash";
-	#	#binding-cells = <0>;
-	#	tapping-term-ms = <200>;
-	#	bindings = <&kp FSLH>, <&kp BSLH>;
-	#};
-	
 	gth: global-quick-tap {
     		compatible = "zmk,behavior-hold-tap";
     		label = "GLOBAL_QUICK_TAP";
