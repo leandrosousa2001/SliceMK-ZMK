@@ -9,69 +9,117 @@
 
 behaviors {
 
-        td_layers: tap_dance_layers {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_LAYERS";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&mo 1>, <&mo 2>, <&mo 3>;
-        };
+        #td_layers: tap_dance_layers {
+        #    compatible = "zmk,behavior-tap-dance";
+        #    label = "TAP_DANCE_LAYERS";
+        #    #binding-cells = <0>;
+        #    tapping-term-ms = <300>;
+        #    bindings = <&mo 1>, <&mo 2>, <&mo 3>;
+        #};
 
-	td2: tdAcento1{
-		compatible = "zmk,behavior-tap-dance";
-		label = "tdAcento1";
-		#binding-cells = <0>;
-		tapping-term-ms = <200>;
-		bindings = <&kp APOSTROPHE>, <&kp GRAVE>;
-	};
+ 	morph1: morph1{
+ 		compatible = "zmk,behavior-mod-morph";
+ 	   	label = "morph1";
+ 	   	#binding-cells = <0>;
+ 	   	bindings = <&kp APOSTROPHE>, <&kp GRAVE>;
+ 	   	mods = <(MOD_LSFT|MOD_RSFT)>;
+ 	};
 
-	td3: tdAcento2{
-		compatible = "zmk,behavior-tap-dance";
-		label = "tdAcento2";
-		#binding-cells = <0>;
-		tapping-term-ms = <200>;
-		bindings = <&kp TILDE>, <&kp CARET>;
-	};
+	#td2: tdAcento1{
+	#	compatible = "zmk,behavior-tap-dance";
+	#	label = "tdAcento1";
+	#	#binding-cells = <0>;
+	#	tapping-term-ms = <200>;
+	#	bindings = <&kp APOSTROPHE>, <&kp GRAVE>;
+	#};
 
-	td4: tdBrace{
-		compatible = "zmk,behavior-tap-dance";
-		label = "tdBrace";
-		#binding-cells = <0>;
-		tapping-term-ms = <200>;
-		bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
-	};
+ 	morph2: morph2{
+ 		compatible = "zmk,behavior-mod-morph";
+ 	   	label = "morph2";
+ 	   	#binding-cells = <0>;
+ 	   	bindings = <&kp TILDE>, <&kp CARET>;
+ 	   	mods = <(MOD_LSFT|MOD_RSFT)>;
+ 	};
 
-	td5: tdPar{
-		compatible = "zmk,behavior-tap-dance";
-		label = "tdPar";
-		#binding-cells = <0>;
-		tapping-term-ms = <200>;
-		bindings = <&kp LPAR>, <&kp RPAR>;
-	};
+	#td3: tdAcento2{
+	#	compatible = "zmk,behavior-tap-dance";
+	#	label = "tdAcento2";
+	#	#binding-cells = <0>;
+	#	tapping-term-ms = <200>;
+	#	bindings = <&kp TILDE>, <&kp CARET>;
+	#};
 
-	td6: tdBkt{
-		compatible = "zmk,behavior-tap-dance";
-		label = "tdBkt";
-		#binding-cells = <0>;
-		tapping-term-ms = <200>;
-		bindings = <&kp LBKT>, <&kp RBKT>;
-	};
+ 	morph3: morph3{
+ 		compatible = "zmk,behavior-mod-morph";
+ 	   	label = "morph3";
+ 	   	#binding-cells = <0>;
+ 	   	bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+ 	   	mods = <(MOD_LSFT|MOD_RSFT)>;
+ 	};
 
-	td7: tdThan{
-		compatible = "zmk,behavior-tap-dance";
-		label = "tdThan";
-		#binding-cells = <0>;
-		tapping-term-ms = <200>;
-		bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
-	};
+	#td4: tdBrace{
+	#	compatible = "zmk,behavior-tap-dance";
+	#	label = "tdBrace";
+	#	#binding-cells = <0>;
+	#	tapping-term-ms = <200>;
+	#	bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+	#};
 
-	td8: tdSlash{
-		compatible = "zmk,behavior-tap-dance";
-		label = "tdSlash";
-		#binding-cells = <0>;
-		tapping-term-ms = <200>;
-		bindings = <&kp FSLH>, <&kp BSLH>;
-	};
+ 	morph4: morph4{
+ 		compatible = "zmk,behavior-mod-morph";
+ 	   	label = "morph4";
+ 	   	#binding-cells = <0>;
+ 	   	bindings = <&kp LPAR>, <&kp RPAR>;
+ 	   	mods = <(MOD_LSFT|MOD_RSFT)>;
+ 	};
+
+	#td5: tdPar{
+	#	compatible = "zmk,behavior-tap-dance";
+	#	label = "tdPar";
+	#	#binding-cells = <0>;
+	#	tapping-term-ms = <200>;
+	#	bindings = <&kp LPAR>, <&kp RPAR>;
+	#};
+
+ 	morph5: morph5{
+ 		compatible = "zmk,behavior-mod-morph";
+ 	   	label = "morph5";
+ 	   	#binding-cells = <0>;
+ 	   	bindings = <&kp LBKT>, <&kp RBKT>;
+ 	   	mods = <(MOD_LSFT|MOD_RSFT)>;
+ 	};
+
+	#td6: tdBkt{
+	#	compatible = "zmk,behavior-tap-dance";
+	#	label = "tdBkt";
+	#	#binding-cells = <0>;
+	#	tapping-term-ms = <200>;
+	#	bindings = <&kp LBKT>, <&kp RBKT>;
+	#};
+
+ 	morph6: morph6{
+ 		compatible = "zmk,behavior-mod-morph";
+ 	   	label = "morph6";
+ 	   	#binding-cells = <0>;
+ 	   	bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+ 	   	mods = <(MOD_LSFT|MOD_RSFT)>;
+ 	};
+
+	#td7: tdThan{
+	#	compatible = "zmk,behavior-tap-dance";
+	#	label = "tdThan";
+	#	#binding-cells = <0>;
+	#	tapping-term-ms = <200>;
+	#	bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+	#};
+
+	#td8: tdSlash{
+	#	compatible = "zmk,behavior-tap-dance";
+	#	label = "tdSlash";
+	#	#binding-cells = <0>;
+	#	tapping-term-ms = <200>;
+	#	bindings = <&kp FSLH>, <&kp BSLH>;
+	#};
 	
 	gth: global-quick-tap {
     		compatible = "zmk,behavior-hold-tap";
@@ -105,7 +153,7 @@ behaviors {
 				&bootloader
 				&trans 	 	&none          	&none     	&none     	&none          	&none     &kp F3 							     	&kp F6  		&none  	&none           &none 		&none			&none        	&trans
 				&trans 	 	&none          	&sQuote   	&dQuote   	&none          	&none     &kp F2 							     	&kp F5  		&none  	&kp AMPERSAND   &kp ASTERISK  	&kp LEFT_PARENTHESIS 	&none        	&trans
-				&trans 	 	&td4 		&td5  	  	&td6 	  	&td7	   	&none         							     		           		&none  	&kp DOLLAR      &kp PERCENT   	&kp CARET            	&kp COLON    	&kp UNDERSCORE
+				&trans 	 	&morph3		&morph4		&morph5		&morph6		&none         							     		           		&none  	&kp DOLLAR      &kp PERCENT   	&kp CARET            	&kp COLON    	&kp UNDERSCORE
 				&mo 2  	 	&kp PIPE       	&kp PLUS  	&kp EQUAL 	&kp QUESTION	&none     &kp F1 							     	&kp F4  		&none  	&kp EXCLAMATION &kp AT_SIGN   	&kp HASH             	&kp BSLH	&trans
 				&trans	 	&trans         	&trans    	&none     	&none                            								        	       		&trans 	       	&none         	&trans               	&trans       	&trans
 															      &none  	     &kp F9 		&kp F12      &none
@@ -118,7 +166,7 @@ behaviors {
 				&bootloader
 				&trans   	&none          	&none     	&none     	&none  		&none     &none  							    	&none  			&none  	&none           &none         	&none        	  	&none     	&trans
 				&trans   	&trans         	&trans    	&trans    	&trans 		&none     &none  							     	&none  			&none  	&kp NUMBER_7    &kp NUMBER_8  	&kp NUMBER_9 	  	&none     	&trans
-				&trans   	&td4 		&td5  	  	&td6 	  	&td7 		&none         							     		       			&none  	&kp NUMBER_4    &kp NUMBER_5  	&kp NUMBER_6 	  	&kp DOT   	&trans
+				&trans   	&morph3		&morph4		&morph5		&morph6		&none         							     		       			&none  	&kp NUMBER_4    &kp NUMBER_5  	&kp NUMBER_6 	  	&kp DOT   	&trans
 				&trans   	&kp PIPE	&kp PLUS  	&kp EQUAL 	&none  		&none     &none  							     	&none  			&none  	&kp NUMBER_1    &kp NUMBER_2  	&kp NUMBER_3 	  	&kp COMMA 	&trans
 				&trans   	&trans         	&trans    	&none     	&none                            								    		        	&kp NUMBER_0	&none         	&trans       	  	&trans    	&trans
 															      &trans  	     &trans 		&trans 	     &trans
@@ -144,7 +192,7 @@ behaviors {
 				&bootloader
 				&none    	&none  		&none 	  	&none   	&none      	&none     &none 								&none 			&none 	&none		&none         	&none        		&none 		&none
 				&none    	&none  		&none 	  	&acE1   	&none 	   	&none     &none 								&none 			&none 	&m_acento_u1	&m_acento_i1	&m_acento_o1		&none 		&none
-				&none    	&acA1  		&none 		&td3		&td2 	   	&none           									     		&none   &none 		&none		&none 			&none 		&none
+				&none    	&acA1  		&none 		&morph2		&morph1 	&none           									     		&none   &none 		&none		&none 			&none 		&none
 				&none    	&none  		&none 	  	&acC    	&none 	   	&none     &none 								&none 			&none 	&none   	&none         	&none        		&none 		&none
 				&none    	&none  		&none 	  	&none		&none           														&none   	&none         	&none        		&none 		&none
 															      &none	     &none 		&none 	     &none
