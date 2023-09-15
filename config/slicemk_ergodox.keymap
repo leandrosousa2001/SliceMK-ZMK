@@ -100,7 +100,7 @@ behaviors {
 			bindings = <
 				&bootloader
 				&trans   	&none          	&none     	&none     	&none  		&none     &none  							    	&none  			&none  	&none           &none         	&none        	  	&none     	&trans
-				&trans   	&trans         	&trans    	&trans    	&trans 		&none     &none  							     	&none  			&none  	&kp NUMBER_7    &kp NUMBER_8  	&kp NUMBER_9 	  	&none     	&trans
+				&trans   	&trans         	&trans    	&dQuote		&trans 		&none     &none  							     	&none  			&none  	&kp NUMBER_7    &kp NUMBER_8  	&kp NUMBER_9 	  	&none     	&trans
 				&trans   	&kp RIGHT_BRACE	&kp RPAR	&kp RBKT 	&kp GT 		&none         							     		       			&none  	&kp NUMBER_4    &kp NUMBER_5  	&kp NUMBER_6 	  	&kp DOT   	&trans
 				&trans   	&kp PIPE	&kp PLUS  	&kp EQUAL 	&none  		&none     &none  							     	&none  			&none  	&kp NUMBER_1    &kp NUMBER_2  	&kp NUMBER_3 	  	&kp COMMA 	&trans
 				&trans   	&trans         	&trans    	&none     	&none                            								    		        	&kp NUMBER_0	&none         	&trans       	  	&trans    	&trans
