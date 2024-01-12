@@ -47,7 +47,7 @@ behaviors {
     	flavor = "hold-preferred";
     	tapping-term-ms = <200>;
     	quick-tap-ms = <175>;
-    	bindings = <&kp LCTL>, <&kp DEL>;
+    	bindings = <&kp>, <&kp>;
 	};
 
 	hm: homerow_mods {  
@@ -73,7 +73,7 @@ behaviors {
 				&kp LCTL	&kp LGUI	&kp LALT	&none   		&kp LA(TAB)	                                        		              				       		&kp F13 	&m_dito		&kp RALT		&kp RGUI      	&kp RCTL
 
 															      &kp C_PREVIOUS &kp C_NEXT		&kp C_VOL_DN &kp C_VOLUME_UP
-				        									     &mo 1    &gth   &kp SPACE          &kp C_MUTE   &kp BSPC        	&kp SPACE
+				        									     &mo 1    &gth LCTL DEL   &kp SPACE          &kp C_MUTE   &kp BSPC        	&kp SPACE
 																							&kp RET    	&kp RET
 			>;
 		};
