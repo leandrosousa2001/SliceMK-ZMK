@@ -132,8 +132,8 @@ behaviors {
 			bindings = <
 				&bootloader
 				&none    	&none  		&none 	  	&none   	&none      		&none     &none 								&none 			&none 	&none			&none         	&none        		&none 		&none
-				&none    	&none  		&none 	  	&none   	&none 	   		&none     &none 								&none 			&none 	&nome			&nome			&none				&none 		&none
-				&none    	&nome  		&kp GRAVE	&kp TILDE	&kp APOSTROPHE	&none           									     		&none   &none 			&none			&none 				&none 		&none
+				&none    	&none  		&none 	  	&none   	&none 	   		&none     &none 								&none 			&none 	&none			&none			&none				&none 		&none
+				&none    	&none  		&kp GRAVE	&kp TILDE	&kp APOSTROPHE	&none           									     		&none   &none 			&none			&none 				&none 		&none
 				&none    	&none  		&none 	  	&acC    	&none 	   		&none     &none 								&none 			&none 	&none   		&none         	&none        		&none 		&none
 				&none    	&none  		&none 	  	&none		&none           																		&none   		&none         	&none        		&none 		&none
 				
