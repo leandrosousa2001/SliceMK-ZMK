@@ -1,4 +1,4 @@
-#include <behaviors.dtsi>
+ #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -100,7 +100,7 @@ behaviors {
 				&kp LCTL 	&kp LGUI 	&kp LALT	&none   	&kp LA(TAB)	                                        		              				       		&kp F13 	&m_dito			&kp RALT		&kp RGUI      	&kp RCTL
 
 															     					&kp C_PREVIOUS 	&kp C_NEXT			&kp C_VOL_DN 	&kp C_VOLUME_UP
-				        									     &hm 1 4    		&kp DEL  		&kp SPACE          	&kp C_MUTE   	&kp BSPC        	&hm RCTL SPACE
+				        									     &hm2 1 4    		&kp DEL  		&kp SPACE          	&kp C_MUTE   	&kp BSPC        	&hm RCTL SPACE
 				                                   								    	     	&kp RET    			&kp RET
 			>;
 		};
