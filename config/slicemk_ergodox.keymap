@@ -160,7 +160,7 @@ behaviors {
 
 	ZMK_MACRO(mMatch1,     	   wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp LPAR>,    		<&macro_tap &kp RPAR>, 			<&macro_tap &kp LEFT>;)
 	ZMK_MACRO(mMatch2,     	   wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp LEFT_BRACE>, 	<&macro_tap &kp RIGHT_BRACE>, 	<&macro_tap &kp LEFT>;)
-	ZMK_MACRO(mMatch3,     	   wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp LBKT>, 		<&macro_tap &kp LBKT>, 			<&macro_tap &kp LEFT>;)
+	ZMK_MACRO(mMatch3,     	   wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp LBKT>, 		<&macro_tap &kp RBKT>, 			<&macro_tap &kp LEFT>;)
 	
 	ZMK_MACRO(dQuote,  wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp DOUBLE_QUOTES>, <&macro_tap &kp SPACE>;)
 	ZMK_MACRO(sQuote,  wait-ms = <20>; tap-ms = <20>; bindings = <&macro_tap &kp APOSTROPHE>, <&macro_tap &kp SPACE>;)
