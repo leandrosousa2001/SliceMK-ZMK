@@ -151,9 +151,9 @@ behaviors {
 				&none    	&none  		&kp GRAVE	&kp TILDE	&kp APOSTROPHE	&none           									     		&none   &none 			&none			&none 				&none 		&none
 				&none    	&none  		&none 	  	&acC    	&none 	   		&none     &none 								&none 			&none 	&none   		&none         	&none        		&none 		&none
 				&none    	&none  		&none 	  	&none		&none           														&none   	&none         		&none        	&none 		&none
-															      		&none	     &none 		&none 	     &none
-														     &none    &none	     &none 		&none 	     &none 		&none
-													                               &none 		&none
+																			     		&trans  	     &trans 		&trans 	     &trans
+																		     &none    &trans   	     &trans 		&trans 	     &trans 	     	&trans
+								                                  									    &trans 		&trans
 			>;
 		};
 	};
