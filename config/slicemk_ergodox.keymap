@@ -66,9 +66,9 @@ behaviors {
     		bindings = <&kp>, <&kp>;
 	};
 
-  gth2: global-quick-tap {
+  gth2: global-quick-tap2 {
     		compatible = "zmk,behavior-hold-tap";
-    		label = "GLOBAL_QUICK_TAP";
+    		label = "GLOBAL_QUICK_TAP2";
     		#binding-cells = <2>;
     		flavor = "tap-preferred";
     		tapping-term-ms = <200>;
