@@ -71,8 +71,8 @@ behaviors {
     		label = "GLOBAL_QUICK_TAP2";
     		#binding-cells = <2>;
     		flavor = "tap-preferred";
-    		tapping-term-ms = <400>;
-    		quick-tap-ms = <399>;
+    		tapping-term-ms = <750>;
+    		quick-tap-ms = <700>;
     		bindings = <&kp>, <&kp>;
 	};
 	
