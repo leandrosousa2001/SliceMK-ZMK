@@ -102,7 +102,7 @@ behaviors {
 				&kp LCTL 	&kp LGUI 	&kp LALT	&kp SPACE   	&kp LA(TAB)	                                        		              				       	&kp F13 	&m_dito			&kp RALT		&kp RGUI      	&kp RCTL
 
 															     				&kp C_PREVIOUS 	&kp C_NEXT				&kp C_VOL_DN 	&kp C_VOLUME_UP
-				        									     &mo 2    		&gth LCTL DEL	&none          			&kp C_MUTE   	&gth3 2 BSPC        	&kp SPACE
+				        									     &mo 2    		&gth LCTL DEL	&none          			&kp C_MUTE   	&gth3 5 BSPC        	&kp SPACE
 				                                   								    	   		&kp RET    				&kp RET
 			>;
 		};
@@ -117,7 +117,7 @@ behaviors {
 				&kp LCTL 	&kp LGUI 		&kp LALT		&kp SPACE   	&kp LA(TAB)	                                        		              				       		&kp F13 		&m_dito			&kp RALT		&kp RGUI      			&kp RCTL
 
 															     				&kp C_PREVIOUS 	&kp C_NEXT				&kp C_VOL_DN 	&kp C_VOLUME_UP
-				        									     &mo 2    		&gth LCTL DEL	&none          			&kp C_MUTE   	&kp BSPC        	&kp SPACE
+				        									     &mo 2    		&gth LCTL DEL	&none          			&kp C_MUTE   	&gth3 5 BSPC        	&kp SPACE
 				                                   								    	   		&kp RET    				&kp RET
 			>;
 		};
@@ -163,10 +163,10 @@ behaviors {
 		acentos {
 			bindings = <
 				&bootloader
-				&none    	&none  		&none 	  	&none   	&none      		&none     &none 								&none 			&none 	&none			&none         	&none        		&none 		&none
-				&none    	&none  		&none 	  	&none   	&none 	   		&none     &none 								&none 			&none 	&none			&none			&none		&none 		&none
-				&none    	&none  		&kp GRAVE	&kp TILDE	&kp APOSTROPHE	&none           									     		&none   &none 			&none			&none 				&none 		&none
-				&none    	&none  		&none 	  	&acC    	&none 	   		&none     &none 								&none 			&none 	&none   		&none         	&none        		&none 		&none
+				&none    	&none  		&none 	  	&none   	&none      		&none     &none 								&none 			&none 	&none				&none         	&none    	&none 		&none
+				&none    	&none  		&none 	  	&none   	&none 	   		&none     &none 								&none 			&none 	&none				&kp APOSTROPHE	&kp GRAVE	&none 		&none
+				&none    	&none  		&none		&none		&none			&none           										&none   &none 					&kp TILDE	&kp CARET	&none 		&none
+				&none    	&none  		&none 	  	&acC    	&none 	   		&none     &none 								&none 			&none 	&none   			&none         	&none       	&none 		&none
 				&none    	&none  		&none 	  	&none		&none           														&none   	&none         		&none        	&none 		&none
 																			     		&trans  	     &trans 		&trans 	     &trans
 																		     &none    &trans   	     &trans 		&trans 	     &trans 	     	&trans
