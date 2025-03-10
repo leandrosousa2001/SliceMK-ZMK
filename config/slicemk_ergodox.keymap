@@ -66,7 +66,7 @@ behaviors {
     		bindings = <&kp>, <&kp>;
 	};
 
-	gth3: global-quick-tap {
+	gth3: global-quick-tap3 {
     		compatible = "zmk,behavior-hold-tap";
     		label = "GLOBAL_QUICK_TAP3";
     		#binding-cells = <2>;
