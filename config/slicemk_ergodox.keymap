@@ -163,13 +163,13 @@ behaviors {
 		acentos {
 			bindings = <
 				&bootloader
-				&none    	&none  		&none 	  	&none   	&none      		&none     &none 								&none 			&none 	&none				&none         	&none    	&none 		&none
-				&none    	&none  		&none 	  	&none   	&none 	   		&none     &none 								&none 			&none 	&none				&kp APOSTROPHE	&kp GRAVE	&none 		&none
-				&none    	&none  		&none		&none		&none			&none           										&none   &none 					&kp TILDE	&kp CARET	&none 		&none
-				&none    	&none  		&none 	  	&none    	&none 	   		&none     &none 								&none 			&none 	&none   			&none         	&none       	&none 		&none
-				&none    	&none  		&none 	  	&none		&none           														&none   	&none         		&none        	&none 		&none
+				&trans    	&trans  		&trans 	  	&trans   	&trans      		&trans     &trans 								&trans 			&trans 	&trans				&trans         	&trans    	&trans 		&trans
+				&trans    	&trans  		&trans 	  	&trans   	&trans 	   		&trans     &trans 								&trans 			&trans 	&trans				&kp APOSTROPHE	&kp GRAVE	&trans 		&trans
+				&trans    	&trans  		&trans		&trans		&trans			&trans           										&trans   &trans 					&kp TILDE	&kp CARET	&trans 		&trans
+				&trans    	&trans  		&trans 	  	&trans    	&trans 	   		&trans     &trans 								&trans 			&trans 	&trans   			&trans         	&trans       	&trans 		&trans
+				&trans    	&trans  		&trans 	  	&trans		&trans           														&trans   	&trans         		&trans        	&trans 		&trans
 																			     		&trans  	     &trans 		&trans 	     &trans
-																		     &none    &trans   	     &trans 		&trans 	     &trans 	     	&trans
+																		     &trans    &trans   	     &trans 		&trans 	     &trans 	     	&trans
 								                                  									    &trans 		&trans
 			>;
 		};
