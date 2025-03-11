@@ -70,7 +70,7 @@ behaviors {
     		compatible = "zmk,behavior-hold-tap";
     		label = "GLOBAL_QUICK_TAP3";
     		#binding-cells = <2>;
-    		flavor = "hold-preferred";
+    		flavor = "tap-preferred";
     		tapping-term-ms = <200>;
     		quick-tap-ms = <175>;
     		bindings = <&mo>, <&kp>;
