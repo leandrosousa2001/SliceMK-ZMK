@@ -164,8 +164,8 @@ behaviors {
 			bindings = <
 				&bootloader
 				&trans    	&trans  		&trans 	  	&trans   	&trans      		&trans     &trans 								&trans 			&trans 	&trans				&trans         	&trans    	&trans 		&trans
-				&trans    	&trans  		&trans 	  	&trans   	&trans 	   		&trans     &trans 								&trans 			&trans 	&trans				&kp APOSTROPHE	&kp GRAVE	&trans 		&trans
-				&trans    	&trans  		&trans		&trans		&trans			&trans           										&trans   &trans 					&kp TILDE	&kp CARET	&trans 		&trans
+				&trans    	&trans  		&kp GRAVE  	&kp APOSTROPHE 	&trans 	   		&trans     &trans 								&trans 			&trans 	&trans				&trans 		&trans 		&trans 		&trans
+				&trans    	&trans  		&kp CARET	&kp TILDE	&trans			&trans           										&trans   &trans 				&trans 		&trans 		&trans 		&trans
 				&trans    	&trans  		&trans 	  	&trans    	&trans 	   		&trans     &trans 								&trans 			&trans 	&trans   			&trans         	&trans       	&trans 		&trans
 				&trans    	&trans  		&trans 	  	&trans		&trans           														&trans   	&trans         		&trans        	&trans 		&trans
 																			     		&trans  	     &trans 		&trans 	     &trans
