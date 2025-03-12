@@ -166,7 +166,7 @@ behaviors {
 				&trans    	&trans  		&trans 	  	&trans   	&trans      		&trans     &trans 								&trans 			&trans 	&trans				&trans         	&trans    	&trans 		&trans
 				&trans    	&trans  		&kp GRAVE  	&kp APOSTROPHE 	&trans 	   		&trans     &trans 								&trans 			&trans 	&trans				&trans 		&trans 		&trans 		&trans
 				&trans    	&trans  		&kp CARET	&kp TILDE	&trans			&trans           										&trans   &trans 				&trans 		&trans 		&trans 		&trans
-				&trans    	&trans  		&trans 	  	&trans    	&trans 	   		&trans     &trans 								&trans 			&trans 	&trans   			&trans         	&trans       	&trans 		&trans
+				&trans    	&trans  		&trans 	  	&acC    	&trans 	   		&trans     &trans 								&trans 			&trans 	&trans   			&trans         	&trans       	&trans 		&trans
 				&trans    	&trans  		&trans 	  	&trans		&trans           														&trans   	&trans         		&trans        	&trans 		&trans
 																			     		&trans  	     &trans 		&trans 	     &trans
 																		     &trans    &trans   	     &trans 		&trans 	     &trans 	     	&trans
